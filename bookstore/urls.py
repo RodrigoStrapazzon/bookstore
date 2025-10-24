@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 import debug_toolbar
 from django.contrib import admin
 from django.urls import path, re_path, include
@@ -26,5 +27,3 @@ urlpatterns = [
     re_path("bookstore/(?P<version>(v1|v2))/", include("product.urls")),
     path("api-token-auth/", obtain_auth_token, name="api_token_auth"),
 ]
-
-
