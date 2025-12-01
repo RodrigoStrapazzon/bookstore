@@ -24,7 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = "django-insecure-95^z&vpvt1ftlt%l*1+nax2z_6i$#^zn)%&foo(dc6x$%a+jfn"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rodrigoStrap.pythonanywhere.com']
 
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
     "order",
     "product",
     "debug_toolbar",
+    "rest_framework_simplejwt",
 ]
 
 MIDDLEWARE = [
@@ -132,7 +132,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
